@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700" rel="stylesheet">
+    <title>IronSkydive</title>
+</head>
+<body>
+    <nav class="nav-var">
+        <ul class="nav-var-ul">
+            <li><a href="#structure">Day structure</a></li> 
+            <li><a href="#team">Team</a></li>
+            <li><a href="#schudule">Schedule</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1> <img src="img/ironhack-skydive-logo.png" >IronSkydive</h1> 
+        <h2>Let the trip</h2>
+        <aside>
+            <p class="text-header"> <i>"The best experience of our lives"<br>Ariel Quiñones & Gonzalo Manrique, Ironhacks Founders</i></p>
+        </aside>
+    </header>
+    <section id="general-information"  class="dark-background" >
+        <article class="container">
+            <h3>Hello</h3>
+            <p class="texto">Welcome to IronSkydive, the best adventure you will ever have</p>
+            <a href="#" class="link-btn">Learn More</a>
+            <hr>
+
+         </article>
+        <article class="container">
+            <h3>About us</h3>
+            <p class="texto">We love a lot programming websites, but we also love to practice sport</p>
+            <a href="#" class="link-btn">Watch Video</a>
+            <hr>
+
+        </article>
+        <article class="container">
+            <h3>Wanna join</h3>
+            <p class="texto">Join our fitness program to be in good shape while learning</p>
+            <a href="#" class="link-btn">Register</a>
+            <hr>
+
+        </article>
+
+</section>
+<section id="structure">
+    <h3>¿Como estructuramos el día?</h3>
+        <div>
+            <article class="service-box container">
+                <img src="img/ironskydive-training1.png" alt="training" class="img">
+                <h4>1.Training</h4>
+                <p>We teach all the necesary things to jump the plane without any kind of problem</p>
+            </article>
+            <article class="service-box container">
+                <img src="img/ironskydive-get-ready.png" alt="get ready" class="img">
+                <h4>2.Get ready</h4>
+                <p>You are alredy prepared, you just need the suit and a parachute. All sizes available</p>
+            </article>
+            <article class="service-box container">
+                <img src="img/ironskydive-fly.png" alt="fly" class="img">
+                <h4>3.Fly</h4>
+                <p>You are ready and the plane is waiting for us in the hangar.Let´s fly</p>
+            </article>
+            <article class="service-box container">
+                <img src="img/ironskydive-jump.png" alt="jump"class="img">
+                <h4>4.Jump!</h4>
+                <p>You have done the must complicated.Just one step left... jump!</p>
+            </article>
+
+        </div>
+</section>
+
+<section id="team">
+    <h3>Team</h3>
+        <p class="section-text">Our team collectively has 75 years of experience.Odds are, when you jump out of the plane whit these professionals, you won´t go splat</p>
+        <hr>
+        <div>
+            <article>
+                <h4 class="member-name">Harold Rothstein</h4>
+                <img src="img/upload_7104a331530d1b0611da55093b7dc421.jpg" alt="imagen1">
+            </article>
+            <article>
+                <h4 class="member-name">Susan Philips</h4>
+                <img src="img/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg" alt="imagen2">
+            </article>
+            <article>
+                <h4 class="member-name">Tylor Roberts</h4>
+                <img src="img/upload_c18b1c463b80090894237a262dfdfbad.jpg" alt="imagen3">
+            </article>
+        </div>
+</section>  
+<section class="container">
+    <h3>Schudele</h3>
+
+    <table class="schedule-table cellpadding="0" cellspacing="0"">
+            <thead>
+                
+                <td>Time</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>09:00 - 11:00</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>x</td>
+                    <td> </td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 14:00</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 14:00</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+        </tbody>
+    </table>
+    <h3>Schudele a time Slot</h3>
+    <form class="slot-form" action="/register" method="post">
+        <div class="slot-form-container">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter yout email">
+        </div>
+        <div class="slot-form-container">
+            <label for="number">Participants</label>
+            <input type="number" placeholder="Number of participants">
+        </div>
+        <div class="slot-form-container">
+            <label for="date">Date</label>
+            <input type="date">
+        </div>
+        <div class="slot-form-container">
+            <label for="select">Time</label>
+            <!-- <input type="select"> -->
+            <select>
+                <option value="early">9:00-11:00</option>
+                <option value="mid">12:00-14:00</option>
+                <option value="late">15:00-17:00</option>
+            </select>
+        </div>
+        <div class="slot-form-container">
+            <button type="submit"> Reserve Your Slot! </button>
+        </div>
+
+
+
+    </form>
+
+</section>
+
+<footer class="dark-background footer">
+    <section>
+        <h5>Contact Information</h5>
+        <address class="address">IronSkydive<br> 33 Rue la Fayette,<br> 75009 Paris,<br> France <br> +33 (0) 619 193 088</address> 
+        <h5>Follow Us</h5>
+        <ul>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
+  class="map-frame"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen
+></iframe>
+
+                    
+</footer>
+</section>
+</body>
+</html>
